@@ -1,81 +1,88 @@
-# Turborepo starter
+# MetaMask SDK Examples Monorepo
 
-This is an official starter Turborepo.
+This monorepo contains various example applications demonstrating the integration of MetaMask SDK across different frameworks and platforms. Built with Turborepo for efficient development and build processes.
 
-## Using this example
+## 🚀 Getting Started
 
-Run the following command:
+Clone and install dependencies:
 
 ```sh
-npx create-turbo@latest
+git clone <repository-url>
+cd metamask-sdk-examples && pnpm install
 ```
 
-## What's inside?
-
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
+## 📦 Repository Structure
 
 ```
-cd my-turborepo
-pnpm build
+metamask-sdk-examples/
+├── examples/           # Example applications
+│   ├── react/         # React.js integration
+│   ├── next/          # Next.js integration
+│   ├── vue/           # Vue.js integration
+│   └── vanilla/       # Vanilla JavaScript integration
+├── packages/          # Shared configurations and utilities
+│   ├── eslint-config/ # Shared ESLint configurations
+│   └── tsconfig/     # Shared TypeScript configurations
 ```
 
-### Develop
+## 🎯 Available Examples
 
-To develop all apps and packages, run the following command:
+Each example in the `examples/` directory demonstrates MetaMask SDK integration in different frameworks and scenarios:
 
-```
-cd my-turborepo
+- **React Example**: Modern React application showcasing hooks and components
+- **Next.js Example**: Server-side rendering and static site generation
+- **Vue Example**: Vue.js integration example
+- **Vanilla JS**: Pure JavaScript implementation without frameworks
+
+## 🛠 Development
+
+### Running Individual Examples
+
+To run a specific example:
+
+```sh
+cd examples/<example-name>
 pnpm dev
 ```
 
-### Remote Caching
+### Adding New Examples
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+1. Create a new directory in `examples/`
+2. Copy the example template (if available)
+3. Implement the MetaMask SDK integration
+4. Update this README with the new example details
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
+## 🔧 Technical Stack
 
-```
-cd my-turborepo
-npx turbo login
-```
+- **Build System**: Turborepo
+- **Package Manager**: pnpm
+- **Language**: TypeScript
+- **Linting**: ESLint
+- **Formatting**: Prettier
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
+## 📚 Documentation
 
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
+Each example includes its own README with:
+- Specific setup instructions
+- Implementation details
+- Best practices
+- Common issues and solutions
 
-```
-npx turbo link
-```
+## 🤝 Contributing
 
-## Useful Links
+We welcome contributions! To add a new example:
 
-Learn more about the power of Turborepo:
+1. Fork the repository
+2. Create a new branch
+3. Add your example
+4. Submit a pull request
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+## 📝 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🔗 Useful Links
+
+- [MetaMask SDK Documentation](https://docs.metamask.io/sdk/)
+- [Turborepo Documentation](https://turbo.build/repo/docs)
+- [Report Issues](https://github.com/yourusername/metamask-sdk-examples/issues)
